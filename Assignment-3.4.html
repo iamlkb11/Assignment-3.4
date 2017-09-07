@@ -1,0 +1,97 @@
+<html><!-- Head of the Root -->
+    <head><!-- child sub root of the html tag as head tag  -->
+        <!-- it is a title tag -->
+        <title>Sign Up</title>
+        <!-- it is a style tag -->
+        <style>
+            /*Text Style*/
+            input[type=text], input[type=password] 
+                {
+                width: 100%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                display: inline-block;
+                border: 1px solid #ccc;
+                box-sizing: border-box;
+                }
+            /*Button Style*/
+            button 
+                {
+                background-color: black;
+                color: white;
+                padding: 14px 20px;
+                margin: 8px 0;
+                border: none;
+                cursor: pointer;
+                width: 100%;
+                opacity:0.3;
+                }
+
+
+            .container 
+                {
+                padding: 16px;
+                }
+
+
+            .clearfix::after 
+                {
+                content: "";
+                clear: both;
+                display: table;
+                }
+
+            .imgcontainer 
+                {
+                text-align: center;
+                margin: 24px 0 12px 0;
+                }
+
+            img.avatar 
+                {
+                width: 40%;
+                border-radius: 50%;
+                }
+
+
+        </style>
+    </head>
+    
+    <body>
+    <!-- it is a body tag -->
+
+        <h2>Signup Form</h2>
+
+        <form action="/123.html" style="border:1px solid #ccc">
+          
+          <div class="imgcontainer">
+            <img src="https://upload.wikimedia.org/wikipedia/en/1/17/Batman-BenAffleck.jpg" alt="Avatar" class="avatar">
+          </div>
+          
+          <div class="container">
+            
+            <label><b>First Name</b></label>
+            <input type="text" placeholder="First Name" name="Name" required>
+            
+            <label><b>Last Name</b></label>
+            <input type="text" placeholder="Last Name" name="Name" required>
+            
+            <label><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" required>
+
+            <label><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+
+            <label><b>Repeat Password</b></label>
+            <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+          
+            <div class="clearfix">
+              <button type="submit" class="submit">Submit</button>
+            </div>
+          
+          </div>
+        
+        </form>
+
+    </body>
+</html>
